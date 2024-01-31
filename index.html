@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/css/index.css">
+  <title>Test Task</title>
+</head>
+
+<body>
+  <div class="wrapper-bg">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="header__item-logo" href="#">
+            <img class="header__img-logo" src="images/logo.svg" alt="logo">
+          </a>
+          <nav class="header__nav">
+            <ul class="header__nav-menu">
+              <li class="header__nav-inner">
+                <a class="header__nav-item" href="#">О марсе</a>
+              </li>
+              <li class="header__nav-inner">
+                <a class="header__nav-item" href="#">Процесс</a>
+              </li>
+              <li class="header__nav-inner">
+                <a class="header__nav-item" href="#">Билеты</a>
+              </li>
+              <li class="header__nav-inner">
+                <a class="header__nav-item" href="#">Новости</a>
+              </li>
+              <li class="header__nav-inner">
+                <a class="header__nav-item" href="#">Контакты</a>
+              </li>
+              <li class="header__nav-inner">
+                <button class="header__nav-btn">Купить билеты</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-mars">
+      <div class="mars__inner">
+        <video className="mars__visual-content" preload="auto" autoplay muted>
+          <source src='video/Mars.m4v' type="video/m4v" />
+          <source src='video/Mars.webm' type="video/webm" />
+        </video>
+        <div class="mars__content">
+          <div class="mars__content-inner">
+            <div class="mars__line">
+            </div>
+            <div class="mars__content-text">
+              <h3 class="mars__sub-name">Точка назначения:</h3>
+              <h1 class="mars__name">Марс</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="popup">
+      <div class="container">
+        <div class="popup__inner">
+          <div class="popup__name-info">
+            <h1 class="popup__name">Бронирование билетов</h1>
+            <button class="popup__close-btn">
+              <img class="popup__close-img" src="images/closePopup.svg" alt="close">
+            </button>
+          </div>
+          <form class="popup__form">
+            <div class="popup__control-content">
+              <div class="popup__input-info">
+                <p class="popup__input-name">Дата заезда</p>
+                <input class="popup__input" type="text" placeholder="13.05.2022">
+              </div>
+              <div class="popup__input-info">
+                <p class="popup__input-name">Дата выезда</p>
+                <input class="popup__input" type="text" placeholder="13.05.2032">
+              </div>
+              <div class="popup__input-info">
+                <p class="popup__input-name">Количество</p>
+                <input class="popup__input" type="text" placeholder="1 человек">
+              </div>
+            </div>
+            <button class="popup__btn">Купить билеты</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
