@@ -331,3 +331,6 @@ button {
     width: 100%;
     top: 10%;
     left: 0%; } }
+@media (max-width: 355px) {
+  .wrapper-bg video {
+    height: 70%; } }
